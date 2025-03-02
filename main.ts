@@ -61,7 +61,7 @@ OFF = 0
 BACKWARD = 1
 FORWARD = 2
 BRAKE = 3
-let PWM_SPEED_MED = 500
+let PWM_SPEED_MED = 800
 let PWD_SPEED_HIGH = 1023
 pins.digitalWritePin(DigitalPin.P0, 0)
 pins.digitalWritePin(DigitalPin.P1, 0)
