@@ -61,7 +61,7 @@ OFF = 0
 BACKWARD = 1
 FORWARD = 2
 BRAKE = 3
-let PWM_SPEED_MED = 800
+let PWM_SPEED_MED = 700
 let PWD_SPEED_HIGH = 1023
 pins.digitalWritePin(DigitalPin.P0, 0)
 pins.digitalWritePin(DigitalPin.P1, 0)
@@ -79,7 +79,7 @@ basic.forever(function () {
             . . # . .
             `)
     } else {
-        spinMotorA(BRAKE, PWM_SPEED_MED)
+        spinMotorA(OFF, PWM_SPEED_MED)
         basic.showIcon(IconNames.Square)
     }
     if (radioLeft == 1) {
@@ -92,7 +92,7 @@ basic.forever(function () {
             . . # . .
             `)
     } else {
-        spinMotorB(BRAKE, PWM_SPEED_MED)
+        spinMotorB(OFF, PWM_SPEED_MED)
         basic.showIcon(IconNames.Square)
     }
 })
